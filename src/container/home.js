@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import HomeCard from '../UI/HomeCard';
+import Homecard from '../ui/Homecard';
 
 export default class Home extends Component {
     homeCardReleases = {
@@ -22,22 +22,18 @@ export default class Home extends Component {
         action: () => alert('Sprints clicked')
     }
     render() {
-        return ( <
-            div className = "container text-center" >
-            <
-            div className = "row" >
-            <
-            HomeCard title = { this.homeCardReleases.title }
-            text = { this.homeCardReleases.text }
-            img = { this.homeCardReleases.img }
-            action = { this.homeCardReleases.action }
-            /> <
-            HomeCard {...this.homeCardBacklog }
-            /> <
-            HomeCard {...this.homeCardSprints }
-            /> < /
-            div > <
-            /div>
+        return (
+            <div className="container text-center" >
+                <div className ="row">
+                    <Homecard title = {this.homeCardReleases.title}
+                        text = {this.homeCardReleases.text}
+                        img = {this.homeCardReleases.img }
+                        action = {this.homeCardReleases.action}
+                    />
+                    <Homecard {...this.homeCardBacklog }/>
+                    <Homecard {...this.homeCardSprints }/>
+                </div>
+           </div>
         );
     }
 }

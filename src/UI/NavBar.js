@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 
 const NavBar = (props) => {
     return (
         <nav className="navbar navbar-expand-md navbar-light bg-light">
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
+                <span className="navbar-toggler-icon"/>
             </button>
 
             <div className="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">

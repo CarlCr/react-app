@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import NavBar from './UI/NavBar.js';
+import Navbar from './ui/Navbar.js';
 import Home from './container/home.js';
 
 class App extends Component {
@@ -8,7 +8,7 @@ class App extends Component {
         const logo = 'CarlCr'
         return (
             <div className="container bg-white">
-                <NavBar logo = {logo}/>
+                <Navbar logo = {logo}/>
                 <Home/>
             </div>
         )
