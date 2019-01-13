@@ -1,16 +1,14 @@
 import React, { Component } from 'react';
-import Navbar from './ui/Navbar.js';
-import Home from './container/home.js';
+import Home from './Views/Home/Index';
 
 class App extends Component {
 
     render() {
-        const logo = 'CarlCr'
+
         return (
-            <div className="container bg-white">
-                <Navbar logo = {logo}/>
+            <div className="bg-white">
                 <Home/>
-            </div>
+             </div>
         )
     }
 }
