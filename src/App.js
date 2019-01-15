@@ -12,8 +12,8 @@ class App extends Component {
         return (
             <div className="bg-white">
                 <BrowserRouter>
-                    <Switch>
-                        <Route path={'/'} exact={true} component={Home}/>
+                    <Switch>  
+                        <Route path={'/'} exact={true}    component={Home}/>
                         <Route path={'/github'} exact={true} component={GitHub}/>
                         <Route path={'/contacto'} exact={true} component={Contacto}/>
                         <Route path={'/about'} exact={true} component={About}/>
